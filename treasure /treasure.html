@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="trassure-css/treasure_ui.css">
+  <link rel="stylesheet" href="trassure-css/envelope.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="
+   https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+   "></script>
+  <script src="../shortcut.js"></script>
+
+  <style>
+    .colored-toast.swal2-icon-success {
+      background-color: #a5dc86 !important;
+    }
+
+    .colored-toast .swal2-title {
+      color: white;
+    }
+
+    .colored-toast .swal2-close {
+      color: white;
+    }
+
+    .colored-toast .swal2-html-container {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="header">your reward is here!!</h1>
+
+  <div class="blank"></div>
+  <div class="popUpAlert"> you don't have this key yet!!</div>
+
+  <img src="../assets/chest_locked.png" id="chest">
+
+  <input type="checkbox" id="keyhole">
+
+  <div class="display_chest">
+    <div class="blank"></div>
+    <div class="closeButton"></div>
+    <div class="keyDisplay">
+      <div id="key"></div>
+      <div id="key"></div>
+      <div id="key"></div>
+      <div class="topKey"></div>
+
+      <div class="circle"></div>
+      <p id="contentKeyDisplay">double tap padlock to insert the key</p>
+    </div>
+
+    <p id="content">you have to find all those key <br> to unlock this</p>
+  </div>
+
+  <p id="bottomText">click padlock to insert the key </p>
+  <button id="return" onclick="setLocation('../index.html')">Back to main page</button>
+
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Dear Fira.</strong>
+            <p>
+              <br>
+              Happy Birthday Fira, Cie g kerasa udh sweet seventeen aja nich wkwk. tahun depan udah legal dong ehem~ <br> g kerasa juga udah 4 tahun sejak kita ketemu, gw seneng kita masih bareng bareng sampe saat ini. <br>semoga makin tambah dewasa,sehat selalu,panjang umur,makin cantik,makin banyak rezeki, makin sukses, bahagia selalu, wish you all the best lah..
+              <br>bisa kali traktiran nya.. wkwkwk <br><br>
+            </p>
+            <p>
+              andai aja gw waktu gw lebih lama lagi pasti lebih bagus lagi.. yak jadi ini hadiah khusus dari gw buat lu ,gw harap lu suka. <br>btw ini ada lagi hadiah buat lu, bisa lu cek sndiri ya hehe
+            </p>
+            <br>
+            <button>
+              <a href="https://drive.google.com/drive/folders/18oVmpTTc8-q6_VfubKYgWeUBMeFfj688">Drive</a>
+            </button><br><br>
+            <p>
+              oh iya gw jg bikin diary book lohh ,lu bisa cek di setting yaa.. siapa tau lu gabut pengen baca wkwk
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="heart"></div>
+    </div>
+  </div>
+
+
+  <script>
+    const envelope = document.querySelector('.envelope-wrapper');
+    envelope.addEventListener('click', () => {
+      envelope.classList.toggle('flap');
+    });
+  </script>
+
+
+</body>
+<script src="treasure-logic/treasure_logic.js"></script>
+<script src="treasure-logic/lock_logic.js"></script>
+<script src="treasure-logic/acces.js"></script>
+
+</html>

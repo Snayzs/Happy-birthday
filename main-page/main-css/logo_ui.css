@@ -1,0 +1,292 @@
+.sectionContainer {
+  transform: translateY(-100px);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.firstSection {
+  display: flex;
+  position: relative;
+  gap: 5px;
+}
+
+.secondSection {
+  display: flex;
+  position: relative;
+  gap: 5px;
+}
+
+.h,.b,.d,.f,
+.i,.ra,.o,.he,
+.al,.na,.si,.be,
+.u,.k{
+  width: 50px;
+  height: 50px;
+  background: dodgerblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+}
+
+.h {
+  background: #F8611E;
+  color: #fff;
+  transition: 1s, right 1s 0.5s;
+}
+
+.b {
+  background: #ffd300;
+  transition: 1.5s;
+}
+
+.d {
+  background: dodgerblue;
+  color: #fff;
+  transition: 1s 0.7s;
+}
+
+.f {
+  background: lightgreen;
+  transition: 1s 2.2s;
+}
+
+.i {
+  background: lightgreen;
+  transition: 1s 2s;
+}
+
+.ra {
+  background: orange;
+  color: #fff;
+  transition: 1s 1.5s;
+}
+
+.o {
+  background: lightgreen;
+}
+
+.he {
+  background: lightpink;
+}
+
+.al {
+  background: plum;
+}
+
+.na {
+  background: #E41212;
+  color: #fff;
+}
+
+.si {
+  background: #ffd300;
+}
+
+.be {
+  background: #F8611E;
+  color: #fff;
+}
+
+.u {
+  background: aquamarine;
+}
+
+.k {
+  background: #E41212;
+  color: #fff;
+}
+
+
+
+
+.h::before,.b::before,
+.d::before,.f::before,
+.i::before,.ra::before,
+.o::before,.he::before,
+.al::before,.na::before,
+.si::before,.be::before,
+.u::before,.k::before{
+  position: absolute;
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.h::before {
+  content: "Hidrogen";
+}
+
+.b::before {
+  content: "Boron";
+}
+
+.d::before {
+  content: "Dysporsium";
+  font-size: 5px;
+}
+
+.f::before {
+  content: "Fluorin";
+}
+
+.i::before {
+  content: "Iodin";
+}
+
+.ra::before {
+  content: "Radium";
+}
+
+.o::before {
+  content: "Oksigen"
+}
+
+.he::before {
+  content: "Helium"
+}
+
+.al::before{
+  content: "Aluminium"
+}
+
+.na::before{
+  content: "Natrium"
+}
+
+.si::before{
+  content: "Silicon"
+}
+
+.be::before{
+  content: "Berilium"
+}
+
+.u::before{
+  content: "Uranium"
+}
+
+.k::before{
+  content: "Kalium"
+}
+
+
+
+.h::after,.b::after,
+.d::after,.f::after,
+.i::after,.ra::after,
+.o::after,.he::after,
+.al::after,.na::after,
+.si::after,.be::after,
+.u::after,.k::after{
+  position: absolute;
+  font-size: 10px;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.h::after {
+  content: "1";
+}
+
+.b::after {
+  content: "5";
+}
+
+.d::after {
+  content: "105";
+}
+
+.f::after {
+  content: "19";
+}
+
+.i::after {
+  content: "53";
+}
+
+.ra::after {
+  content: "88";
+}
+
+.o::after {
+  content: "8";
+}
+
+.he::after {
+  content: "2";
+}
+
+.al::after{
+  content: "13"
+}
+
+.na::after{
+  content: "11"
+}
+
+.si::after{
+  content: "12"
+}
+
+.be::after{
+  content: "4"
+}
+
+.u::after{
+  content: "92"
+}
+
+.k::after{
+  content: "19"
+}
+
+
+
+
+.big {
+  position: absolute;
+  scale: 3;
+  right: 50%;
+  translate: 50%;
+  border: 1px solid black;
+}
+
+.swipeRight {
+  transform: translateY(-300px) rotate(90deg);
+  opacity: 0;
+}
+
+.swipeLeft {
+  transform: translateX(-300px) rotate(-90deg);
+  opacity: 0;
+}
+
+.top {
+  scale: 0.3;
+  z-index: 6;
+  top: 0;
+  right: -60px;
+  height: 110px;
+  width: 200px;
+  position: fixed;
+  animation: down 0.5s;
+}
+
+@keyframes down {
+  0% {
+    top: -50px;
+  }
+
+  100% {
+    top: 0;
+  }
+}

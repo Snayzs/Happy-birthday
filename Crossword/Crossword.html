@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crossword</title>
+  <link rel="stylesheet" href="Crossword-css/Crossword.css">
+  
+  <script src="../shortcut.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="
+    https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+    "></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="wrapper-title">
+      <span class="c">C</span>
+      <span class="ross">rossword</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="wrapper"></div>
+  </div>
+  <section class="button-section">
+    <button class="check">check</button>
+    <button class="hint">hint</button>
+    <button class="return"><a onclick="setLocation('../index.html')">
+        Back to main page </a></button>
+  </section>
+  <section class="score">
+    <hr> <br>
+    <p class="find">word finded = 0 </p>
+    <p class="left">word left = 22</p>
+    <br>
+    <hr> <br>
+  </section>
+
+  <div class="question">
+    <hr>
+    <h2>Question</h2>
+    <hr>
+    <section class="mendatar">
+      <b>mendatar</b>
+      <ol>
+        <li>Nama burung yang memiliki corak yang sangat indah di Indonesia, biasanya di pulau Jawa</li>
+        <li>Bulan kelahiran si pembuat game ini :v</li>
+        <li>tahun yang mengalami penambahan satu hari dengan tujuan untuk menyesuaikan penanggalan dengan tahun astronomi</li>
+        <li>Nama buah yang dipercaya bisa menyebabkan keguguran</li>
+        <li>Slime biru pemimpin negara monster</li>
+        <li>Nama gunung tertinggi di dunia</li>
+        <li>tempat yang digunakan untuk menyimpan segala keperluan sekolah</li>
+        <li>Buah merah yang selalu hadir sebagai toping atau isian dessert</li>
+        <li>flying</li>
+        <li>penguat rasa(NaCl)</li>
+      </ol>
+
+    </section>
+    <hr>
+    <section class="menurun">
+      <b>menurun</b>
+      <ol start="11">
+        <li>Alat yang biasa digunakan untuk memanggang kue</li>
+        <li>Makanan yang identik dengan pulau madura</li>
+        <li>Brave</li>
+        <li>pot bunga</li>
+        <li>virus yang ditularkan melalui gigitan anjing yang dapat berakibat fatal</li>
+        <li>Langka</li>
+        <li>Telur</li>
+        <li>Planet pertama di dalam tata Surya kita</li>
+        <li>Tidak salah</li>
+        <li>warna favorit si pembuat game ini :v</li>
+        <li>menangis</li>
+        <li>Antonim kata pasang</li>
+      </ol>
+    </section>
+    <hr> <br> <br>
+    <footer>
+      copyright © 2023 - Diky
+    </footer>
+  </div>
+
+
+
+</body>
+  <script src="Crossword-logic/main.js"></script>
+  <script src="Crossword-logic/hard.js"></script>
+</html>

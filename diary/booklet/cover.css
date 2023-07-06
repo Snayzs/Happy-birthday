@@ -1,0 +1,120 @@
+.book {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transition: transform 0.5s;
+  scale: 0.4;
+  top: 10%;
+}
+
+.paper {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front,
+.back {
+  background-color: #242424;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+  border-radius: 0 20px 20px 0;
+}
+
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content,
+.back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+
+/* Paper stack order */
+#p1 {
+  z-index: 3;
+}
+
+#p2 {
+  z-index: -2;
+}
+
+#b1{
+  border-radius: 20px 0 0 20px;
+}
+
+#f1 {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 20px 20px 0px #444444D9;
+}
+
+.endpage {
+  box-shadow: 20px 20px 0px #444444D9;
+}
+
+.shadow {
+  box-shadow: 0 20px 0 #444444D9;
+}
+
+#f1 h1{
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: #fff;
+  font-family: serif;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+#f1 hr{
+  height: 100%;
+  border: 1px solid #fff;
+  position: absolute;
+  right: 20%;
+}
+
+#b1 #thanks{
+  font-family: monospace;
+  padding: 0 20px;
+  position: absolute;
+  top: 10%;
+  color: #fff;
+  text-align: center;
+}
+
+#b1 #credit{
+  font-family: monospace;
+  position: absolute;
+  bottom: 10%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}

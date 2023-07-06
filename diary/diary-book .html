@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My-diary Book</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="booklet/jquery.easing.1.3.js"></script>
+  <script src="booklet/jquery.booklet.1.1.0.min.js"></script>
+
+  <link href="booklet/jquery.booklet.1.1.0.css" rel="stylesheet" />
+  <link href="booklet/cover.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <a id="next_page_button"></a>
+  <a id="prev_page_button"></a>
+
+  <div id="book" class="book">
+    <div id="p1" class="paper">
+      <div class="front">
+        <div id="f1" class="front-content">
+          <h1>Diary</h1><hr>
+        </div>
+      </div>
+      <div class="back">
+        <div id="b1" class="back-content">
+          <div class="container">
+            <div class="book_wrapper">
+
+              <div id="mybook" style="display:none;">
+                <div class="b-load">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="p2" class="paper">
+      <div class="front">
+        <div id="f2" class="front-content">
+        </div>
+      </div>
+      <div class="back">
+        <div id="b1" class="back-content">
+          <h1 id="thanks">Terimakasih telah membaca buku ini sampai akhir.</h1>
+          <p id="credit">credit <br> Moleskine</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<button class="return" onclick="locationn()">Close book & back to main page</button>
+
+
+</body>
+<script src="booklet/text.js"></script>
+<script src="booklet/main.js"></script>
+<script src="booklet/cover.js"></script>
+</html>

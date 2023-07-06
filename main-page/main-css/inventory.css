@@ -1,0 +1,276 @@
+:root {
+  --background-inventory: #ECDDC0;
+  --background-cell: burlywood;
+  --border-cell: #B59A76;
+  --background-achievement: #03946D;
+  --color-achievement: #222;
+}
+
+.container-inventory {
+  position: fixed;
+  top: 0;
+  background: #394867;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 6;
+  padding-top: 25%;
+}
+
+.container-inventory h2 {
+  color: brown;
+  width: 80%;
+  height: 25px;
+  padding: 5px 0;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 2px;
+  border-top: 2px solid var(--border-cell);
+  border-bottom: 2px solid var(--border-cell);
+  margin-top: 20px;
+}
+
+.wrapper-inventory table {
+  position: relative;
+  border-spacing: 5px;
+}
+
+.container-table {
+  position: relative;
+  bottom: 0px;
+  border-bottom: 2px solid var(--border-cell);
+  margin: 0 0;
+  padding-bottom: 20px;
+  width: 85%;
+  height: 300px;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  
+}
+::-webkit-scrollbar{
+  width: 0;
+  background: transparent;
+}
+
+.desk {
+  position: fixed;
+  height: 320px;
+  width: 205px;
+  background: floralwhite;
+  border-radius: 5px;
+  right: 12%;
+  z-index: 2;
+  display: none;
+  color: #444;
+}
+
+.desk .icon-i {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--border-cell);
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desk span {
+  color: #444;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.desk p {
+  margin: 0 10px;
+  padding: 10px 0;
+}
+
+.wrapper-inventory td p {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--background-cell);
+  color: brown;
+  font-size: 10px;
+  text-align: center;
+  top: 0;
+  border-radius: 0 0 5px 0;
+}
+
+.cell-inventory {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: floralwhite;
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+  position: relative;
+  border: 2px solid var(--background-cell);
+  display: table-cell;
+}
+
+.cell-inventory .wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-inventory {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 70%;
+  padding: 20px 0;
+  background: var(--background-inventory) url(../../assets/batthern.png);
+  border-radius: 5px;
+  box-shadow: 0 -2px 5px dimgray;
+  transition: filter 0.1s ease-in;
+}
+
+.wrapper-inventory section {
+  display: flex;
+  width: auto;
+  position: absolute;
+  top: -8%;
+  left: 10%;
+  z-index: -1;
+}
+
+.label {
+  height: 50px;
+  margin: 5px;
+  position: relative;
+  background: sandybrown;
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: monospace;
+  line-height: 2;
+  transition: transform 0.5s;
+}
+
+.active {
+  background: coral;
+  transform: translateY(-10px);
+}
+
+#coin {
+  font-family: monospace;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+  color: #444;
+  background: var(--background-cell);
+  border: 2px solid var(--border-cell);
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  background: var(--background-cell);
+  border: 2px solid var(--border-cell);
+  font-size: 2rem;
+  line-height: 0.5;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.container-achievement {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  height: 75%;
+  width: 100%;
+}
+
+.wrapper-achievement {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid var(--border-cell);
+  overflow: scroll;
+}
+
+.wrapper-achievement ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.wrapper-achievement li {
+  position: relative;
+  width: 100%;
+  background: var(--background-achievement);
+  margin: 5px 0;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wrapper-achievement li img {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  margin-left: 5px;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.wrapper-achievement li h3 {
+  color: var(--color-achievement);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 45px;
+  display: inline-block;
+  width: 70%;
+}
+
+.wrapper-achievement li p {
+  color: var(--color-achievement);
+  width: 85%;
+  padding-left: 45px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.indianred {
+  background: indianred;
+}
+
+.indianred #coin {
+  display: none;
+}
+
+.indianred .close-button {
+  background: indianred;
+  border-color: rosybrown;
+  color: #fff;
+}
+
+.indianred h2 {
+  color: #fff;
+  border-top-color: moccasin;
+  border-bottom-color: moccasin;
+}

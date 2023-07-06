@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main-Page</title>
+
+  <link rel="stylesheet" href="main-page/main-css/logo_ui.css">
+  <link rel="stylesheet" href="main-page/main-css/style.css">
+  <link rel="stylesheet" href="main-page/main-css/nav.css">
+  <link rel="stylesheet" href="main-page/main-css/sidebar.css">
+  <link rel="stylesheet" href="main-page/main-css/inventory.css">
+  <link rel="stylesheet" href="main-page/main-css/kitchen.css">
+  <link rel="stylesheet" href="main-page/main-css/easterEgg.css">
+  <link rel="stylesheet" href="main-page/main-css/cake.css">
+
+  <script src="shortcut.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+    "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  <style>
+    .colored-toast.swal2-icon-success {
+      background-color: #a5dc86 !important;
+    }
+
+    .colored-toast .swal2-title {
+      color: white;
+    }
+
+    .colored-toast .swal2-close {
+      color: white;
+    }
+
+    .colored-toast .swal2-html-container {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <audio src="" controls id="audio"></audio>
+  <audio src="" controls id="audio2"></audio>
+  <input type="checkbox" id="burgerToggle" class="none">
+  <nav class="navbar">
+    <div class="burgerIcon-container">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="sidebar">
+    <div class="burgertrigger"></div>
+    <div class="burgerIcon-sidebar">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="top-close"></div>
+    <div class="profile"></div>
+    <hr>
+    <div class="content-profile">
+      <h5>Fira amimaisyah</h5>
+    </div>
+    <hr>
+    <ul>
+      <li>
+        <span class="headermenu">General</span>
+      </li>
+      <li><br></li>
+      <hr>
+      <li>
+        <a onclick="scrollLocation($('.wrapper-main-container')),tap()">
+          <div class="wrapper-icon">
+            <div class="icon home"></div>
+            <span>Home</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a onclick="setLocation('../treasure /treasure.html')">
+          <div class="wrapper-icon">
+            <div class="icon gift"></div>
+            <span>Present</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a>
+          <div class="wrapper-icon">
+            <div class="icon game"></div>
+            <span>Game</span>
+            <div class="arrow"></div>
+          </div>
+        </a>
+      </li>
+      <ul class="submenu">
+        <li>
+          <a onclick="setLocation('../Crossword/Crossword.html')">
+            <div class="wrapper-icon-submenu">
+              <span>• Crossword</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a onclick="setLocation('../Scrambleword /Scrambleword.html')">
+            <div class="wrapper-icon-submenu">
+              <span>• Word Scrumble</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a onclick="setLocation('../wordsearch/wordSeacrh.html')">
+            <div class="wrapper-icon-submenu">
+              <span>• Word Search</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <li>
+        <div class="emblem new none">New</div>
+        <a onclick="inventory()">
+          <div class="wrapper-icon">
+            <div class="icon inventory"></div>
+            <span>Inventory</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a>
+          <div class="wrapper-icon">
+            <div class="icon contact"></div>
+            <span>Contact person</span>
+            <div class="arrow"></div>
+          </div>
+        </a>
+      </li>
+      <ul class="submenu">
+        <li>
+          <a onclick="setLocation('https://wa.me/6283830862251')">
+            <div class="wrapper-icon-submenu">
+              <span>• What's up</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a onclick="setLocation('https://www.facebook.com/red.fury.184?mibextid=ZbWKwL')">
+            <div class="wrapper-icon-submenu">
+              <span>• Facebook</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a onclick="setLocation('https://instagram.com/dyz_ky?igshid=MzNlNGNkZWQ4Mg==')">
+            <div class="wrapper-icon-submenu">
+              <span>• Instagram</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a onclick="setLocation('http://tiktok.com/@redfury882')">
+            <div class="wrapper-icon-submenu">
+              <span>• Tiktok</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a onclick="setLocation('https://github.com/Snayzs')">
+            <div class="wrapper-icon-submenu">
+              <span>• Github</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a onclick="scrollLocation($('.aboutThisPage')),tap()">
+          <div class="wrapper-icon">
+            <div class="icon about"></div>
+            <span>About</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a onclick="scrollLocation($('.componentTitle')),tap()">
+          <div class="wrapper-icon">
+            <div class="icon component"></div>
+            <span>Component</span>
+          </div>
+        </a>
+      </li>
+    </ul><br>
+    <hr>
+    <ul>
+      <li>
+        <span class="headermenu">OTHERS</span>
+      </li>
+      <li><br></li>
+      <hr>
+      <li>
+        <div class="emblem new none">New</div>
+        <a onclick="setting()">
+          <div class="wrapper-icon">
+            <div class="icon settings"></div>
+            <span>Settings</span>
+          </div>
+        </a>
+      </li>
+      <li class="hide-diary">
+        <a onclick="setLocation('diary/diary-book .html')">
+          <div class="wrapper-icon">
+            <div class="icon diary"></div>
+            <span>Diary book</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br>
+    <footer class="sidebar-footer">
+      <p>copyright © 2023 - Diky</p>
+    </footer>
+  </div>
+
+  <section class="wrapper-main-container">
+    <div class="sectionContainer">
+      <section class="firstSection">
+        <div class="h big letter">
+          <h2>H</h2>
+        </div>
+        <div class="b swipeRight letter">
+          <h2>B</h2>
+        </div>
+        <div class="d swipeRight letter">
+          <h2>Dy</h2>
+        </div>
+      </section>
+      <section class="secondSection">
+        <div class="f swipeLeft letter">
+          <h2>F</h2>
+        </div>
+        <div class="i swipeLeft letter">
+          <h2>I</h2>
+        </div>
+        <div class="ra swipeLeft letter">
+          <h2>Ra</h2>
+        </div>
+      </section>
+    </div>
+    <div class="content">
+      <div id="scroll">click this icon</div>
+      <div class="containerRule">
+        <hr><br>
+        <span id="ruleTitle">follow these rule for a better experience</span>
+        <br><br>
+        <hr><br>
+        <ol id="rule">
+          <li>Gunakan perangkat handphone Anda untuk membuka halaman ini. <br>(Belum support untuk mode Desktop)</li>
+          <li>Gunakan aplikasi Google Chrome di perangkat handphone Anda untuk membuka halaman ini.</li>
+          <li>Hindari menggunakan tombol "kembali".</li>
+          <li>Gunakan tombol-tombol yang telah disediakan untuk navigasi antar halaman dengan perangkat handphone.</li>
+          <li>Hanya gunakan Refresh ketika halaman error atau tidak tergenetate dengan baik</li>
+          <li>website ini di buat menggunakan Cookies untuk menyenyimpan data sementara.</li>
+          <li>progress disini hanya akan tersimpan selama 7 hari dan akan kembali reset setelah itu.</li>
+          <li>dark mode hanya bisa dipakai di halaman ini</li>
+          <li>Jika menemukan masalah, error, bug atau hal-hal sejenisnya silahkan hubungi <b>Diky</b>.(ada reward tersendiri)</li>
+          <li>jelajahi halaman ini dan temukan hal-hal baru dan rahasia</li>
+        </ol>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br>
+        <hr><br>
+        <span id="ruleTitle" class="aboutThisPage">About this page</span>
+        <br><br>
+        <hr><br>
+        <p id="rule">
+          <b>Selamat Ulang Tahun Fira Amimaysyah!</b>
+          <br><br>
+          Selamat datang di halaman spesial ini yang khusus saya buat untuk merayakan ulang tahunmu yang istimewa. Di sini, saya ingin menyampaikan ucapan selamat ulang tahun yang penuh cinta dan harapan untukmu.
+          <br><br>
+          Tentang Kita: <br>
+          Kita adalah pasangan yang saling melengkapi. pasangan yang telah melalui pahit manis bersama. Setiap momen yang kita bagikan, setiap tawa dan tangis, telah mengukir kenangan tak terlupakan dalam hati kita. Di hari ulang tahunmu ini, saya ingin mengungkapkan betapa beruntung nya saya memiliki kamu dalam hidupku.
+          <br><br>
+          Tujuan Website Ini: <br>
+          Website ini dibuat sebagai sebuah kejutan untukmu, sebagai bentuk penghormatan dan kasih sayang saya untukmu. Melalui halaman ini, saya ingin mengekspresikan betapa spesialnya dirimu dan betapa besar pengaruhmu terhadap hidup saya. Semoga website ini dapat membawa senyuman di wajahmu dan memberikanmu kebahagiaan di hari ulang tahunmu.
+          <br><br><br><br>
+          Selamat Ulang Tahun sekali lagi,Semoga hari ini menjadi permulaan tahun yang tak terlupakan. Aku sangat beruntung memiliki kamu sebagai pacar dan teman sejati. Semoga kita terus bersama dan menjalani petualangan indah dalam hidup kita.
+          <br><br><br>
+          Diky-
+          <br><br><br>
+          sorry kalo cringe bang namanya juga formalitas:v
+        </p>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br>
+        <hr><br>
+        <span id="ruleTitle" class="componentTitle">Component</span>
+        <br><br>
+        <hr><br>
+        <canvas id="myChart"></canvas>
+        <hr><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <div class="container-cake">
+          <div class="birthday-cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+            <div class="candle">
+              <div class="flame"></div>
+            </div>
+            <p>Click to start</p>
+          </div>
+          <h1>HAPPY BIRTHDAY</h1>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <hr><br>
+        <span id="ruleTitle">thanks to the parties below </span>
+        <br><br>
+        <hr>
+      </div>
+      <p id="thanks">
+        Terima kasih kepada semua pihak di bawah ini yang telah memberikan kontribusi dalam pembuatan halaman ini, termasuk ide-ide, konsep, material, dan berbagai aspek lainnya. Saya sangat mengapresiasi bantuan yang telah diberikan. Tanpa bantuan dan kontribusi mereka, halaman ini tidak akan menjadi apa yang sekarang.
+        <br> <br> <br> <br>
+      </p>
+      <section class="parties">
+        <ul>
+          <li>Google</li>
+          <li>Chrome</li>
+          <li>YouTube</li>
+          <li>ChatGpt</li>
+          <li>Bard</li>
+          <li>jsdelivr</li>
+          <li>Sweetalert2@11</li>
+          <li>Cookie.min.js</li>
+          <li>codepen</li>
+          <li>github</li>
+          <li>Moleskine</li>
+          <li>Ryanf</li>
+        </ul>
+        <ul>
+          <li>jQuery</li>
+          <li>icon8</li>
+          <li>Pinterest</li>
+          <li>ColorHunt</li>
+          <li>Background remove</li>
+          <li>Capcut</li>
+          <li>Spck editor</li>
+          <li>Pixellab</li>
+          <li>W3school</li>
+          <li>stack overflow</li>
+          <li>chart.js</li>
+        </ul>
+      </section>
+
+      <footer class="mainFooter">
+        <svg viewBox="0 0 120 28">
+          <defs>
+            <mask id="xxx">
+              <circle cx="7" cy="12" r="40" fill="#fff" />
+            </mask>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="
+             1 0 0 0 0  
+             0 1 0 0 0  
+             0 0 1 0 0  
+             0 0 0 13 -9" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+            <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs>
+          <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+          <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+          <g class="gooeff">
+            <circle class="drop drop1" cx="20" cy="2" r="1.8" />
+            <circle class="drop drop2" cx="25" cy="2.5" r="1.5" />
+            <circle class="drop drop3" cx="16" cy="2.8" r="1.2" />
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            <div class="duck">
+              <span class="duckSay"> 4 8 2 9 5 7</span>
+            </div>
+        </svg>
+        <div class="bottom-footer">
+          <p>copyright © 2023 - Diky </p>
+          <p>you can scroll it now!</p>
+          <div class="portal1"></div>
+          <div id="submarine">
+            <input type="number" id="coordinat" max="999999" placeholder="Insert Number">
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+
+  <div class="container-inventory">
+    <div class="wrapper-inventory">
+      <span id="coin">Coin : $0</span>
+      <button class="close-button">×</button>
+      <h2>ITEMS</h2>
+      <div class="container-kitchen"></div>
+      <div class="container-table">
+        <div class="desk">
+          <button class="close-button">×</button>
+          <div class="icon-i"></div>
+          <span id="title">silver key</span>
+          <p id="description"></p>
+        </div>
+      </div>
+      <div class="container-achievement">
+        <div class="wrapper-achievement">
+          <ul></ul>
+        </div>
+      </div>
+
+      <section>
+        <div class="label active">Items</div>
+        <div class="label">Kitchen</div>
+        <div class="label">Achievement</div>
+      </section>
+    </div>
+
+  </div>
+
+
+</body>
+
+<script src="shortcut.js"></script>
+<script src="main-page/main-logic/achievement.js"></script>
+<script src="main-page/main-logic/sidebar_logic.js"></script>
+<script src="main-page/main-logic/logo_logic.js"></script>
+<script src="main-page/main-logic/inventory.js"></script>
+<script src="main-page/main-logic/chart.js"></script>
+<script src="main-page/main-logic/setting_logic.js"></script>
+<script src="easterEgg.js"></script>
+
+
+</html>

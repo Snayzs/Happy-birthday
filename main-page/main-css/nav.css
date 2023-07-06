@@ -1,0 +1,78 @@
+.navbar{
+  width: 100%;
+  height: 50px;
+  background: crimson;
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  top: -50px;
+  transition: 0.5s;
+}
+.burgerIcon-container{
+  background: transparent;
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.burgerIcon-container span{
+  position: relative;
+  background: #fff;
+  height: 5px;
+  width: 30px;
+  border-radius: 5px;
+}
+#burgerToggle{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  opacity: 0;
+  position: fixed;
+  z-index: 99;
+  top: 10px;
+  left: 15px;
+}
+.burgerIcon-sidebar{
+  position: fixed;
+  height: 40px;
+  width: 45px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  z-index: 3;
+}
+.burgerIcon-sidebar span{
+  position: relative;
+  background: #fff;
+  height: 5px;
+  width: 30px;
+  border-radius: 5px;
+}
+.burgerIcon-sidebar span:nth-child(1){
+  rotate: 45deg;
+  transform-origin: 5px 2px;
+}
+.burgerIcon-sidebar span:nth-child(2){
+  rotate: -45deg;
+  transform-origin: -3px 0;
+}
+
+.top-close{
+  position: fixed;
+  background: #1e2229;
+  height: 50px;
+  width: 80%;
+  z-index: 2;
+  border-bottom: 2px solid #3F404A;
+}
