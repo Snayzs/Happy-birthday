@@ -46,7 +46,7 @@ function handleKeyDblclick(x, index) {
   $('body').on('click', () => {
     if (chestOpened[0] && chestOpened[1] && chestOpened[2]) {
       setTimeout(() => {
-        chest.src = '../assets/chest_opened.png'
+        chest.src = 'assets/chest_opened.png'
         chest.css("marginBottom", "10px")
         Cookies.set('coin',400,{expires: 7})
         
