@@ -145,7 +145,7 @@ $('#submarine').onclick = function() {
     $('#submarine').css('animationDirection', 'reverse')
     $('#submarine').addClass('pop')
     setTimeout(() => {
-      window.location.href = '/index.html'
+      setLocation('index.html')
     }, 1300)
   }, 1200)
 }
