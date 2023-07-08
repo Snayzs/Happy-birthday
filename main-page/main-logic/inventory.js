@@ -188,7 +188,7 @@ function setImage() {
     let defaultsizes = 50
     let image = new Image(src[i].size || defaultsizes, src[i].size || defaultsizes);
 
-    image.src = `../assets/${src[i].image}`;
+    image.src = `assets/${src[i].image}`;
     let wrap = create('div')
     wrap.addClass('wrap')
 

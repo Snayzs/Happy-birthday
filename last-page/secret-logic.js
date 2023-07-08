@@ -86,7 +86,7 @@ $a('.shop li').forEach((call, index) => {
 })
 
 const buy = $a('.buy')
-let coin = Cookies.get("coin") || 100
+let coin = Cookies.get("coin") || 0
 
 $('#coin').textContent = 'Coin : $' + coin
 
