@@ -74,7 +74,3 @@ function arrowLeft(x) {
     $('.back').addClass('shadow')
   }
 }
-
-function locationn(){
-  window.location.href = '../index.html'
-}
