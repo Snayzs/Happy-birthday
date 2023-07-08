@@ -743,7 +743,7 @@ $('.check').onclick = function() {
         Swal.fire({
           title: 'congratulation',
           text: `you're achieve a bronze key!`,
-          imageUrl: '../assets/keybronze.png',
+          imageUrl: 'assets/keybronze.png',
           imageWidth: 200,
           imageHeight: 200,
           footer: 'you can open your inventory to check'

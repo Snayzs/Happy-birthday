@@ -78,7 +78,7 @@ function gameClear() {
     Swal.fire({
       title: 'congratulation',
       text: `you're achieve a silver key!`,
-      imageUrl: '../assets/keysilver.png',
+      imageUrl: 'assets/keysilver.png',
       imageWidth: 200,
       imageHeight: 200,
       footer: 'you can open your inventory to check'

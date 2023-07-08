@@ -60,7 +60,7 @@ birthdayCake.onclick = function() {
   textCake.textContent = 'click again to add candle'
   birthdayCake.onclick = function() {
     candle.css('display', 'block')
-    audio.src = '../assets/sfx/piano.mp3'
+    audio.src = 'assets/sfx/piano.mp3'
     if (piano) {
       audio.play()
       piano = false

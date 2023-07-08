@@ -32,7 +32,7 @@ function setDuck() {
   })
 
   function duckSound() {
-    audio2.src = '../assets/sfx/duck.mp3'
+    audio2.src = 'assets/sfx/duck.mp3'
     audio2.volume = 0.1
     audio2.currentTime = 0.2
     audio2.play()
@@ -149,7 +149,7 @@ function makeItRain() {
 
 function startRain() {
   makeItRain();
-  audio.src = '../assets/sfx/rain.mp3'
+  audio.src = 'assets/sfx/rain.mp3'
   audio.volume = 0.1
   audio.play().catch(function() {
     update(true)

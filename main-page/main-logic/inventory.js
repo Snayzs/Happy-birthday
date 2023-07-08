@@ -355,7 +355,7 @@ function handleValue(title, value) {
         $('#description').textContent = src[index].description
         $('#title').textContent = src[index].title
 
-        image.src = `../assets/${src[index].image}`;
+        image.src = `assets/${src[index].image}`;
         image.width = src[index].size * 2 || 100
         image.height = src[index].size * 2 || 100
 

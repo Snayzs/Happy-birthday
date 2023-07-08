@@ -1293,7 +1293,7 @@ function setScore(){
     Swal.fire({
       title: 'congratulation',
       text: `you're achieve a gold key!`,
-      imageUrl: '../assets/keygold.png',
+      imageUrl: 'assets/keygold.png',
       imageWidth: 200,
       imageHeight: 200,
       footer: 'you can open your inventory to check'
