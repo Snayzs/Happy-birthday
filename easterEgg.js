@@ -117,7 +117,7 @@ $('#coordinat').on('blur', function() {
     }, 700)
 
     setTimeout(() => {
-      window.location.href = '../last-page/secret.html'
+      window.location.href = '../secret.html'
     }, 3500)
   }
 })
