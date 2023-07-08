@@ -119,7 +119,7 @@ let key = [
     title: 'Dough',
   }, {
     image: 'image/glazing.png',
-    description: 'lapisan lumer yang sangat enak yang dapat membuat setiap kue terasa enak',
+    description: 'lapisan lumer yang sangat lembut yang dapat membuat setiap kue terasa enak',
     title: 'Glazing',
   }
 ];
