@@ -64,7 +64,7 @@ for (var i = 0; i < listItem.length; i++) {
   span.appendChild(btn)
 
   let img = new Image(30, 30)
-  img.src = '../assets/image/' + listItem[i].src
+  img.src = 'assets/image/' + listItem[i].src
 
   li.appendChild(p)
   li.appendChild(span)
@@ -145,7 +145,7 @@ $('#submarine').onclick = function() {
     $('#submarine').css('animationDirection', 'reverse')
     $('#submarine').addClass('pop')
     setTimeout(() => {
-      window.location.href = '../index.html'
+      window.location.href = '/index.html'
     }, 1300)
   }, 1200)
 }

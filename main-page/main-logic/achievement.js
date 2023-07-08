@@ -60,7 +60,7 @@ function fill_a() {
   for (let i = 0; i < filteredArray.length; i++) {
 
     let img = new Image()
-    img.src = "../assets/star.png"
+    img.src = "assets/star.png"
 
     let title = create('h3')
     title.textContent = list_a[i].title
